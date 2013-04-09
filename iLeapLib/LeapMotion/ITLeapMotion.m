@@ -34,6 +34,9 @@ static ITLeapMotion* instance = nil;
 }
 
 -(void) startListening {
+    if(webSocketClient.readyState == SR_OPEN) {
+        [webSocketClient close];
+    }
     if(self.leapWebSocketServerURL) {
         webSocketClient = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:self.leapWebSocketServerURL]];
     } else {
