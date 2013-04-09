@@ -43,9 +43,9 @@
 		1FA13DDA1713058200C015F9 /* ITLeapGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13DB61713056400C015F9 /* ITLeapGesture.m */; };
 		1FA13DDB1713058200C015F9 /* ITLeapMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13DB81713056400C015F9 /* ITLeapMotion.m */; };
 		1FA13DDC1713058200C015F9 /* ITLeapVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13DBA1713056400C015F9 /* ITLeapVector.m */; };
-		1FA13E551713F66100C015F9 /* ITLeapHand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA13E531713F66100C015F9 /* ITLeapHand.h */; };
+		1FA13E551713F66100C015F9 /* ITLeapHand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA13E531713F66100C015F9 /* ITLeapHand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FA13E561713F66100C015F9 /* ITLeapHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13E541713F66100C015F9 /* ITLeapHand.m */; };
-		1FA13E591713F9E500C015F9 /* ITLeapPointable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA13E571713F9E400C015F9 /* ITLeapPointable.h */; };
+		1FA13E591713F9E500C015F9 /* ITLeapPointable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA13E571713F9E400C015F9 /* ITLeapPointable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FA13E5A1713F9E500C015F9 /* ITLeapPointable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13E581713F9E400C015F9 /* ITLeapPointable.m */; };
 /* End PBXBuildFile section */
 
@@ -229,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FA13DBB1713056400C015F9 /* ITLeapFrame.h in Headers */,
+				1FA13E551713F66100C015F9 /* ITLeapHand.h in Headers */,
+				1FA13E591713F9E500C015F9 /* ITLeapPointable.h in Headers */,
 				1FA13DBD1713056400C015F9 /* ITLeapGesture.h in Headers */,
 				1FA13DBF1713056400C015F9 /* ITLeapMotion.h in Headers */,
 				1FA13DC11713056400C015F9 /* ITLeapVector.h in Headers */,
@@ -236,8 +238,6 @@
 				1FA13DD11713056A00C015F9 /* base64.h in Headers */,
 				1FA13DD21713056A00C015F9 /* NSData+SRB64Additions.h in Headers */,
 				1FA13DD41713056A00C015F9 /* SRWebSocket.h in Headers */,
-				1FA13E551713F66100C015F9 /* ITLeapHand.h in Headers */,
-				1FA13E591713F9E500C015F9 /* ITLeapPointable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

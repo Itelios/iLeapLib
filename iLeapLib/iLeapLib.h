@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import <ITLeapMotion/ITLeapMotion.h>
-#import <ITLeapMotion/ITLeapFrame.h>
-#import <ITLeapMotion/ITLeapGesture.h>
-#import <ITLeapMotion/ITLeapVector.h>
+#import <iLeapLib/ITLeapMotion.h>
+#import <iLeapLib/ITLeapFrame.h>
+#import <iLeapLib/ITLeapGesture.h>
+#import <iLeapLib/ITLeapVector.h>
+#import <iLeapLib/ITLeapHand.h>
+#import <iLeapLib/ITLeapPointable.h>
