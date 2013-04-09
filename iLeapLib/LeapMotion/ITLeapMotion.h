@@ -17,10 +17,12 @@
 -(void) leapMotionRecognizeGesture:(ITLeapGesture*)aGesture;
 -(void) leapMotionRecognizePointable:(ITLeapPointable*)aPointable;
 -(void) leapMotionRecognizeHand:(ITLeapHand*)aHand;
+-(void) leapMotionReconizePointableIDIsEnded:(NSNumber*)anId;
 @end
 
 @interface ITLeapMotion : NSObject<SRWebSocketDelegate> {
     SRWebSocket* webSocketClient;
+    NSArray* pointablesIds;
 }
 
 @property (nonatomic, retain) NSString* leapWebSocketServerURL;

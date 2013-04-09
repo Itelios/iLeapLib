@@ -62,13 +62,26 @@ static ITLeapMotion* instance = nil;
     }
     
     if(frame.pointables.count > 0) {
+        NSMutableArray* presentPointableIds = [NSMutableArray array];
         for (ITLeapPointable* pointable in frame.pointables) {
             if(self.delegate && [self.delegate respondsToSelector:@selector(leapMotionRecognizePointable:)]) {
                 [self.delegate leapMotionRecognizePointable:pointable];
             }
+            [presentPointableIds addObject:pointable.ID];
         }
+        
+        for (NSNumber* anId in pointablesIds) {
+            if([presentPointableIds containsObject:anId]) {
+                //Already present
+            } else {
+                if(self.delegate && [self.delegate respondsToSelector:@selector(leapMotionReconizePointableIDIsEnded:)]) {
+                    [self.delegate leapMotionReconizePointableIDIsEnded:anId];
+                }
+            }
+        }
+        pointablesIds = presentPointableIds;
     }
-    
+
     if(frame.gestures.count > 0) {
         for (ITLeapGesture* gesture in frame.gestures) {
             if(self.delegate && [self.delegate respondsToSelector:@selector(leapMotionRecognizeGesture:)]) {
