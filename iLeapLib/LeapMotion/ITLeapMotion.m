@@ -39,7 +39,7 @@ static ITLeapMotion* instance = nil;
     } else {
         webSocketClient = [[SRWebSocket alloc] initWithURL:[NSURL URLWithString:@"ws://localhost:6437/"]];
     }
-    
+    webSocketClient.delegate = self;
     [webSocketClient open];
 }
 
