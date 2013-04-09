@@ -16,7 +16,6 @@ Copyright 2013 ITELIOS SAS. All rights reserved.
 
 Only Gesture are available for the moment, so to do : 
 
-* Getting Fingers, Pointables and Hands in elegant manner
 * Beautify the code with enumeration (e.g. for type of gesture, or state, etc.)
 * any others suggestions to increase this lib…
 

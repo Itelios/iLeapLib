@@ -53,6 +53,22 @@ static ITLeapMotion* instance = nil;
 -(void) webSocket:(SRWebSocket *)webSocket didReceiveMessage:(id)message {
     NSDictionary* dict = [message objectFromJSONString];
     ITLeapFrame* frame = [[ITLeapFrame alloc] initWithDict:dict];
+    if(frame.hands.count > 0) {
+        for (ITLeapHand* hand in frame.hands) {
+            if(self.delegate && [self.delegate respondsToSelector:@selector(leapMotionRecognizeHand:)]) {
+                [self.delegate leapMotionRecognizeHand:hand];
+            }
+        }
+    }
+    
+    if(frame.pointables.count > 0) {
+        for (ITLeapPointable* pointable in frame.pointables) {
+            if(self.delegate && [self.delegate respondsToSelector:@selector(leapMotionRecognizePointable:)]) {
+                [self.delegate leapMotionRecognizePointable:pointable];
+            }
+        }
+    }
+    
     if(frame.gestures.count > 0) {
         for (ITLeapGesture* gesture in frame.gestures) {
             if(self.delegate && [self.delegate respondsToSelector:@selector(leapMotionRecognizeGesture:)]) {
@@ -60,6 +76,7 @@ static ITLeapMotion* instance = nil;
             }
         }
     }
+    
 }
 
 @end

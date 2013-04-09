@@ -43,6 +43,10 @@
 		1FA13DDA1713058200C015F9 /* ITLeapGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13DB61713056400C015F9 /* ITLeapGesture.m */; };
 		1FA13DDB1713058200C015F9 /* ITLeapMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13DB81713056400C015F9 /* ITLeapMotion.m */; };
 		1FA13DDC1713058200C015F9 /* ITLeapVector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13DBA1713056400C015F9 /* ITLeapVector.m */; };
+		1FA13E551713F66100C015F9 /* ITLeapHand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA13E531713F66100C015F9 /* ITLeapHand.h */; };
+		1FA13E561713F66100C015F9 /* ITLeapHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13E541713F66100C015F9 /* ITLeapHand.m */; };
+		1FA13E591713F9E500C015F9 /* ITLeapPointable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA13E571713F9E400C015F9 /* ITLeapPointable.h */; };
+		1FA13E5A1713F9E500C015F9 /* ITLeapPointable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13E581713F9E400C015F9 /* ITLeapPointable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		1FA13DCB1713056A00C015F9 /* NSData+SRB64Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+SRB64Additions.m"; sourceTree = "<group>"; };
 		1FA13DCC1713056A00C015F9 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		1FA13DCD1713056A00C015F9 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		1FA13E531713F66100C015F9 /* ITLeapHand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLeapHand.h; sourceTree = "<group>"; };
+		1FA13E541713F66100C015F9 /* ITLeapHand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLeapHand.m; sourceTree = "<group>"; };
+		1FA13E571713F9E400C015F9 /* ITLeapPointable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLeapPointable.h; sourceTree = "<group>"; };
+		1FA13E581713F9E400C015F9 /* ITLeapPointable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLeapPointable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,14 +174,18 @@
 		1FA13DB21713056400C015F9 /* LeapMotion */ = {
 			isa = PBXGroup;
 			children = (
+				1FA13DB71713056400C015F9 /* ITLeapMotion.h */,
+				1FA13DB81713056400C015F9 /* ITLeapMotion.m */,
 				1FA13DB31713056400C015F9 /* ITLeapFrame.h */,
 				1FA13DB41713056400C015F9 /* ITLeapFrame.m */,
 				1FA13DB51713056400C015F9 /* ITLeapGesture.h */,
 				1FA13DB61713056400C015F9 /* ITLeapGesture.m */,
-				1FA13DB71713056400C015F9 /* ITLeapMotion.h */,
-				1FA13DB81713056400C015F9 /* ITLeapMotion.m */,
 				1FA13DB91713056400C015F9 /* ITLeapVector.h */,
 				1FA13DBA1713056400C015F9 /* ITLeapVector.m */,
+				1FA13E531713F66100C015F9 /* ITLeapHand.h */,
+				1FA13E541713F66100C015F9 /* ITLeapHand.m */,
+				1FA13E571713F9E400C015F9 /* ITLeapPointable.h */,
+				1FA13E581713F9E400C015F9 /* ITLeapPointable.m */,
 			);
 			path = LeapMotion;
 			sourceTree = "<group>";
@@ -224,6 +236,8 @@
 				1FA13DD11713056A00C015F9 /* base64.h in Headers */,
 				1FA13DD21713056A00C015F9 /* NSData+SRB64Additions.h in Headers */,
 				1FA13DD41713056A00C015F9 /* SRWebSocket.h in Headers */,
+				1FA13E551713F66100C015F9 /* ITLeapHand.h in Headers */,
+				1FA13E591713F9E500C015F9 /* ITLeapPointable.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +334,8 @@
 				1FA13DDA1713058200C015F9 /* ITLeapGesture.m in Sources */,
 				1FA13DDB1713058200C015F9 /* ITLeapMotion.m in Sources */,
 				1FA13DDC1713058200C015F9 /* ITLeapVector.m in Sources */,
+				1FA13E561713F66100C015F9 /* ITLeapHand.m in Sources */,
+				1FA13E5A1713F9E500C015F9 /* ITLeapPointable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +375,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -384,7 +400,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;

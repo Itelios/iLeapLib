@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "ITLeapGesture.h"
+#import "ITLeapPointable.h"
+#import "ITLeapHand.h"
 #import "SRWebSocket.h"
 
 @protocol  ITLeapMotionDelegate <NSObject>
 @optional
 -(void) leapMotionRecognizeGesture:(ITLeapGesture*)aGesture;
-
+-(void) leapMotionRecognizePointable:(ITLeapPointable*)aPointable;
+-(void) leapMotionRecognizeHand:(ITLeapHand*)aHand;
 @end
 
 @interface ITLeapMotion : NSObject<SRWebSocketDelegate> {
