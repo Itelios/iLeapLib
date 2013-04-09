@@ -47,6 +47,7 @@
 		1FA13E561713F66100C015F9 /* ITLeapHand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13E541713F66100C015F9 /* ITLeapHand.m */; };
 		1FA13E591713F9E500C015F9 /* ITLeapPointable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA13E571713F9E400C015F9 /* ITLeapPointable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1FA13E5A1713F9E500C015F9 /* ITLeapPointable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13E581713F9E400C015F9 /* ITLeapPointable.m */; };
+		1FA13E771714382500C015F9 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FA13DCD1713056A00C015F9 /* SRWebSocket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -327,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA13E771714382500C015F9 /* SRWebSocket.m in Sources */,
 				1FA13DD61713058200C015F9 /* JSONKit.m in Sources */,
 				1FA13DD71713058200C015F9 /* base64.c in Sources */,
 				1FA13DD81713058200C015F9 /* NSData+SRB64Additions.m in Sources */,
